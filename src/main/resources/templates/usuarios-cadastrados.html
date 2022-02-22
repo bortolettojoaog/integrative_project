@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+    <head>
+		<title>Bem Bonita Bordados</title>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+		
+		<!--Tags para seo-->
+		<meta name="description" content="Bem Bonita Bordados" />
+		<meta name="keyword" content="bem bonita bordados, bbb, bem bonita, bem b bordados, bem bonita b, b bonita b, b b bordados, artesenal" />
+		<meta name="author" content="João G. Bortoletto" />
+		<!----------------->
+
+		<!--Compatibilidade-->
+		<meta http-equiv="X-AU-Compatible" content="IE-Edge" />
+		<!------------------->
+
+		<!--Estilização-->
+    	<link href="css/style.css" rel="stylesheet">
+		<!--------------->
+
+		<!--Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+		<!--------->
+
+		<!--Externos-->
+		
+		<!------------>
+    </head>
+
+    <body>
+        <div class="modal-create">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+
+                <div id="modal-img" class="modal-img"></div><!--modal-img-->
+            </div><!--modal-content-->
+        </div><!--modal-create-->
+
+        <header>
+            <div class="container">
+                <a href="/"><div class="logo"></div></a><!--logo-->
+
+                <nav class="menu-desktop">
+                    <ul>
+                        <li class="nrm"><a class="nrm" href="/">Home</a></li>
+                        <li class="nrm"><a class="nrm" href="/sobre-nos">Sobre Nós</a></li>
+                        <li class="nrm"><a class="nrm" href="/contato">Contato</a></li>
+                        <li class="nrm"><a class="nrm" href="/produtos">Produtos</a></li>
+                    </ul><!--ul-->
+                </nav><!--menu-desktop-->
+
+                <div class="botao" id="botao">
+                    <button class="btn-menu">Menu
+                        <span id="hamburguer"></span>
+                    </button>
+                </div><!--botao-->
+
+                <nav class="menu-mobile">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/sobre-nos">Sobre Nós</a></li>
+                        <li><a href="/contato">Contato</a></li>
+                        <li><a href="/produtos">Produtos</a></li>
+                    </ul><!--ul-->
+                </nav><!--menu-mobile-->
+
+                <div class="clear"></div><!--clear-->
+
+                <div class="line"></div><!--line-->
+            </div><!--container-->
+        </header><!--header-->
+
+		<section class="usuarios">
+			<div class="container">
+				<table>
+					<caption>Usuários cadastrados</caption>
+		            <thead>
+		                <tr>
+		                    <th>Nome:</th>
+		                    <th>Documento:</th>
+		                    <th>Telefone:</th>
+		                    <th>Celular:</th>
+		                    <th>#</th>
+		                    <th>#</th>
+		                </tr>
+		            </thead>
+		            <tbody>
+		            	<tr th:each="usuario : ${usuarios}">
+		
+							<td><span th:text="${usuario.nome}"></span></td>
+							<td><span th:text="${usuario.documento}"></span></td>
+							<td><span th:text="${usuario.telefone}"></span></td>
+							<td><span th:text="${usuario.celular}"></span></td>
+		
+		                    <td>
+		                    	<a th:href="${(#mvc.url('CC#deletarUsuario').arg(0, usuario.id)).build()}">
+		                    		<button type="button" class="button delete">Excluir</button>
+		                    	</a>
+		                    </td>
+		                    
+							<td>
+		                    	<a th:href="${(#mvc.url('CC#editarUsuario').arg(0, usuario.id)).build()}">
+		                    		<button type="button" class="button edit">Editar</button>
+		                    	</a>
+		                    </td>
+						</tr>
+		            </tbody>
+		        </table>
+			</div><!--container-->
+		</section><!--usuarios-->
+
+        <footer class="baixo">
+            <div class="container">
+                <div class="line"></div><!--line-->
+
+                <p>Todos os direitos reservados.</p>
+            </div><!--container-->
+        </footer>
+
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

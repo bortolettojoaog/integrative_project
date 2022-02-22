@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="pt-br"_xmlns:th="http://thymeleaf.org">
+
+    <head>
+		<title>Bem Bonita Bordados</title>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+		
+		<!--Tags para seo-->
+		<meta name="description" content="Bem Bonita Bordados" />
+		<meta name="keyword" content="bem bonita bordados, bbb, bem bonita, bem b bordados, bem bonita b, b bonita b, b b bordados, artesenal" />
+		<meta name="author" content="João G. Bortoletto" />
+		<!----------------->
+
+		<!--Compatibilidade-->
+		<meta http-equiv="X-AU-Compatible" content="IE-Edge" />
+		<!------------------->
+
+		<!--Estilização-->
+    	<link href="css/style.css" rel="stylesheet">
+		<!--------------->
+
+		<!--Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+		<!--------->
+
+		<!--Externos-->
+		
+		<!------------>
+    </head>
+
+    <body>
+        <div class="modal-create">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+
+                <div id="modal-img" class="modal-img"></div><!--modal-img-->
+            </div><!--modal-content-->
+        </div><!--modal-create-->
+
+        <header>
+            <div class="container">
+                <a href="/"><div class="logo"></div></a><!--logo-->
+
+                <nav class="menu-desktop">
+                    <ul>
+                        <li class="nrm"><a class="nrm" href="/">Home</a></li>
+                        <li class="nrm"><a class="nrm" href="/sobre-nos">Sobre Nós</a></li>
+                        <li class="nrm"><a class="nrm" href="/contato">Contato</a></li>
+                        <li class="nrm"><a class="nrm" href="/produtos">Produtos</a></li>
+                        <li class="cad"><a class="cad" href="/cadastrar">Cadastrar</a></li>
+                    </ul><!--ul-->
+                </nav><!--menu-desktop-->
+
+                <div class="botao" id="botao">
+                    <button class="btn-menu">Menu
+                        <span id="hamburguer"></span>
+                    </button>
+                </div><!--botao-->
+
+                <nav class="menu-mobile">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/sobre-nos">Sobre Nós</a></li>
+                        <li><a href="/contato">Contato</a></li>
+                        <li><a href="/produtos">Produtos</a></li>
+                        <li><a href="/cadastrar">Cadastrar</a></li>
+                    </ul><!--ul-->
+                </nav><!--menu-mobile-->
+
+                <div class="clear"></div><!--clear-->
+
+                <div class="line"></div><!--line-->
+            </div><!--container-->
+        </header><!--header-->
+
+        <section class="banner">
+            <div class="container">
+                <div class="imagem">
+                    <div class="overlay"></div><!--overlay-->
+
+                    <div class="banner-img">
+                        <div class="container">
+                            <h2>Bem vindo(a) ao nosso <span>Website</span>!</h2>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam justo erat, maximus eu lacus nec, vulputate cursus velit. Quisque tempus ut orci eu placerat. Suspendisse a sapien non est cursus gravida id at urna. Nullam semper est in finibus venenatis. Sed vitae elit pulvinar, sagittis ipsum at, faucibus est. Proin varius purus quis bibendum faucibus. Quisque nec ligula tincidunt magna consequat tempor. Praesent eleifend congue augue, nec suscipit sem fringilla nec.</p>
+                            <p>Mauris eu iaculis arcu, at pellentesque velit. Proin ut porta ex. Nam vel ex libero. Fusce vitae imperdiet ligula. In tincidunt, diam ultricies varius consequat, orci enim congue mauris, ut molestie nunc enim quis ipsum. In ac nibh eget sem bibendum ultrices. Donec hendrerit erat et nisi cursus convallis.</p>
+                        </div><!--container-->
+                    </div><!--banner-img-->
+                </div><!--imagem-->
+            </div><!--container-->
+        </section><!--banner-->
+
+        <section class="destaques">
+            <div class="title">
+                <h2>Bordados em Destaque</h2>
+            </div><!--title-->
+
+            <div class="container">
+
+                <div class="box-single">
+                    <div class="box-single-wraper">
+                        <a id="modal" href="#"><div img-src="destaques6.jpg" style="background-image: url('images/destaques6.jpg');" class="img"></div></a>
+
+                        <div class="wraper-info">
+                            <div class="nome-destaque">
+                                <p>Destaque <b>01</b></p>
+                            </div><!--nome-destaque-->
+    
+                            <div class="info-destaque">
+                                <p>A novidade acaba de chegar na Bem Bonita.</p>
+                                <p>Árvores natalinas personalizadas ao seu gosto, se adequando a decoração da sua casa.</p>
+                            </div><!--info-destaque-->
+                        </div><!--wraper-info-->
+                    </div><!--box-single-wraper-->
+
+                    <div class="saber-mais">
+                        <a href="#">Saber Mais</a>
+                    </div><!--saber-mais-->
+                </div><!--box-single-->
+
+                <div class="box-single">
+                    <div class="box-single-wraper">
+                        <a id="modal" href="#"><div img-src="destaques5.jpg" style="background-image: url('images/destaques5.jpg');" class="img"></div></a>
+
+                        <div class="wraper-info">
+                            <div class="nome-destaque">
+                                <p>Destaque <b>02</b></p>
+                            </div><!--nome-destaque-->
+    
+                            <div class="info-destaque">
+                                <p>A novidade acaba de chegar na Bem Bonita.</p>
+                            </div><!--info-destaque-->
+                        </div><!--wraper-info-->
+                    </div><!--box-single-wraper-->
+
+                    <div class="saber-mais">
+                        <a href="#">Saber Mais</a>
+                    </div><!--saber-mais-->
+                </div><!--box-single-->
+
+                <div class="box-single">
+                    <div class="box-single-wraper">
+                        <a id="modal" href="#"><div img-src="destaques4.jpg" style="background-image: url('images/destaques4.jpg');" class="img"></div></a>
+
+                        <div class="wraper-info">
+                            <div class="nome-destaque">
+                                <p>Destaque <b>03</b></p>
+                            </div><!--nome-destaque-->
+    
+                            <div class="info-destaque">
+                                <p>A novidade acaba de chegar na Bem Bonita.</p>
+                            </div><!--info-destaque-->
+                        </div><!--wraper-info-->
+                    </div><!--box-single-wraper-->
+
+                    <div class="saber-mais">
+                        <a href="#">Saber Mais</a>
+                    </div><!--saber-mais-->
+                </div><!--box-single-->
+            </div><!--container-->
+        </section><!--destaques-->
+
+        <section class="depoimentos">
+            <div class="title">
+                <h2>Depoimentos</h2>
+            </div><!--title-->
+
+            <div class="container">
+                <div class="depoimento-single">
+                    <div class="user">
+                        <div class="img-user"></div><!--img-user-->
+
+                        <div class="name-user"><p>Menina</p></div><!--name-user-->
+                    </div><!--img-user-->
+
+                    <div class="depoimento">
+                        <p>"Estrutura e atendimento excepcionais! Adorei os produtos da Bem Bonita Bordados. Com toda certeza realizarei mais compras neste site."</p>
+                    </div><!--depoimento-->
+                </div><!--depoimento-single-->
+            </div><!--container-->
+        </section><!--depoimentos-->
+
+        <footer class="baixo">
+            <div class="container">
+                <div class="line"></div><!--line-->
+
+                <p>Todos os direitos reservados.</p>
+            </div><!--container-->
+        </footer>
+
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

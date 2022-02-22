@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+		<title>Contato</title>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+		
+		<!--Tags para seo-->
+		<meta name="description" content="Bem Bonita Bordados" />
+		<meta name="keyword" content="bem bonita bordados, bbb, bem bonita, bem b bordados, bem bonita b, b bonita b, b b bordados, artesenal" />
+		<meta name="author" content="João G. Bortoletto" />
+		<!----------------->
+
+		<!--Compatibilidade-->
+		<meta http-equiv="X-AU-Compatible" content="IE-Edge" />
+		<!------------------->
+
+		<!--Estilização-->
+    	<link href="css/style.css" rel="stylesheet">
+		<!--------------->
+
+		<!--Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+		<!--------->
+
+		<!--Externos-->
+		
+		<!------------>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <a href="#"><div class="logo"></div></a><!--logo-->
+
+                <nav class="menu-desktop">
+                    <ul>
+                        <li class="nrm"><a class="nrm" href="/">Home</a></li>
+                        <li class="nrm"><a class="nrm" href="/sobre-nos">Sobre Nós</a></li>
+                        <li class="nrm"><a class="nrm" href="/contato">Contato</a></li>
+                        <li class="nrm"><a class="nrm" href="/produtos">Produtos</a></li>
+                    </ul><!--ul-->
+                </nav><!--menu-desktop-->
+
+                <div class="botao" id="botao">
+                    <button class="btn-menu">Menu
+                        <span id="hamburguer"></span>
+                    </button>
+                </div><!--botao-->
+
+                <nav class="menu-mobile">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/sobre-nos">Sobre Nós</a></li>
+                        <li><a href="/contato">Contato</a></li>
+                        <li><a href="/produtos">Produtos</a></li>
+                    </ul><!--ul-->
+                </nav><!--menu-mobile-->
+
+                <div class="clear"></div><!--clear-->
+
+                <div class="line"></div><!--line-->
+            </div><!--container-->
+        </header><!--header-->
+
+        <section class="contato">
+            <div class="title">
+                <h2>Entre em contato</h2>
+            </div><!--title-->
+
+            <div class="container">
+                <form>
+                    <div class="form-group">
+                        <label>Nome:</label>
+                        <input type="text" name="nome" placeholder="*Digite seu nome..." required />
+                    </div><!--form-group-->
+
+                    <div style="width: 50%;" class="form-group">
+                        <label>E-mail:</label>
+                        <input type="email" name="email" placeholder="*Digite seu e-mail..." required />
+                    </div><!--form-group-->
+
+                    <div style="width: 50%;" class="form-group">
+                        <label>Telefone:</label>
+                        <input type="text" name="telefone" placeholder="*Digite seu telefone..." required />
+                    </div><!--form-group-->
+
+                    <div class="form-group">
+                        <label>Sua Mensagem:</label>
+                        <textarea name="mensagem" placeholder="*Digite sua mensagem..." required></textarea>
+                    </div><!--form-group-->
+
+                    <div class="form-group">
+                        <input type="submit" name="acao" value="Enviar!" id="enviar" />
+                    </div><!--form-group-->
+                </form><!--form-->
+
+                <div class="clear"></div><!--clear-->
+            </div><!--container-->
+        </section><!--contato-->
+
+        <footer class="baixo">
+            <div class="container">
+                <div class="line"></div><!--line-->
+
+                <p>Todos os direitos reservados.</p>
+            </div><!--container-->
+        </footer>
+		
+		
+        <script src="js/scripts.js"></script>
+        
+        <script>
+        	let obj = document.querySelector('#enviar');
+        	obj.addEventListener('click', function(e) {
+        		e.preventDefault();
+        		console.log('Contato estabelecido!');
+        	});
+        </script>
+    </body>
+</html>

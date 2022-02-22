@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+		<title>Cadastrar</title>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+		
+		<!--Tags para seo-->
+		<meta name="description" content="Bem Bonita Bordados" />
+		<meta name="keyword" content="bem bonita bordados, bbb, bem bonita, bem b bordados, bem bonita b, b bonita b, b b bordados, artesenal" />
+		<meta name="author" content="João G. Bortoletto" />
+		<!----------------->
+
+		<!--Compatibilidade-->
+		<meta http-equiv="X-AU-Compatible" content="IE-Edge" />
+		<!------------------->
+
+		<!--Estilização-->
+    	<link href="css/style.css" rel="stylesheet">
+		<!--------------->
+
+		<!--Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+		<!--------->
+
+		<!--Externos-->
+		
+		<!------------>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <a href="#"><div class="logo"></div></a><!--logo-->
+
+                <nav class="menu-desktop">
+                    <ul>
+                        <li class="nrm"><a class="nrm" href="/">Home</a></li>
+                        <li class="nrm"><a class="nrm" href="/sobre-nos">Sobre Nós</a></li>
+                        <li class="nrm"><a class="nrm" href="/contato">Contato</a></li>
+                        <li class="nrm"><a class="nrm" href="/produtos">Produtos</a></li>
+                    </ul><!--ul-->
+                </nav><!--menu-desktop-->
+
+                <div class="botao" id="botao">
+                    <button class="btn-menu">Menu
+                        <span id="hamburguer"></span>
+                    </button>
+                </div><!--botao-->
+
+                <nav class="menu-mobile">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/sobre-nos">Sobre Nós</a></li>
+                        <li><a href="/contato">Contato</a></li>
+                        <li><a href="/produtos">Produtos</a></li>
+                    </ul><!--ul-->
+                </nav><!--menu-mobile-->
+
+                <div class="clear"></div><!--clear-->
+
+                <div class="line"></div><!--line-->
+            </div><!--container-->
+        </header><!--header-->
+
+        <section class="cadastro">
+            <br/>
+            <div class="title">
+                <h2>Realização de Cadastro</h2>
+            </div><!--title-->
+
+            <div class="container">
+                <form method="post" action="/cadastrar">
+                    <div class="form-group">
+                        <label>Nome:</label>
+                        <input type="text" id="name" name="nome" placeholder="*Digite seu nome..." required />
+                    </div><!--form-group-->
+
+                    <div class="form-group">
+                        <label>Tipo:</label>
+                        <select id="cpf_cnpj" name="tipo_pessoa">
+                            <option value="1" selected>Pessoa Física</option>
+                            <option value="2">Pessoa Jurídica</option>
+                        </select>
+                    </div><!--form-group-->
+
+                    <div class="form-group">
+                        <label id="type">CPF:</label>
+                        <input type="text" id="cpf" name="documento" placeholder="*Digite seu CPF..." required />
+                        <input style="display: none;" type="text" id="cnpj" name="cpf_cnpj" placeholder="*Digite seu CNPJ..." />
+                    </div><!--form-group-->
+
+                    <div class="form-group w50">
+                        <label id="type">Telefone:</label>
+                        <input type="text" id="phone" name="telefone" placeholder="*Digite seu Telefone..." required />
+                    </div><!--form-group-->
+
+                    <div class="form-group w50">
+                        <label id="type">Celular:</label>
+                        <input type="text" id="celphone" name="celular" placeholder="*Digite seu Celular..." required />
+                    </div><!--form-group-->
+
+                    <div class="form-group">
+                        <label id="type">CEP:</label>
+                        <input type="text" id="cep" name="cep" placeholder="*Digite seu CEP..." required />
+                    </div><!--form-group-->
+
+                    <div class="form-group w33">
+                        <label id="type">Logradouro:</label>
+                        <input type="text" id="address" name="logradouro" placeholder="..." readonly required />
+                    </div><!--form-group-->
+
+                    <div class="form-group w33">
+                        <label id="type">Bairro:</label>
+                        <input type="text" id="district" name="bairro" placeholder="..." readonly required />
+                    </div><!--form-group-->
+
+                    <div class="form-group w33">
+                        <label id="type">Cidade:</label>
+                        <input type="text" id="city" name="cidade" placeholder="..." readonly required />
+                    </div><!--form-group-->
+
+                    <div class="form-group w50">
+                        <label id="type">Estado:</label>
+                        <input type="text" id="state" name="estado" placeholder="..." readonly required />
+                    </div><!--form-group-->
+
+                    <div class="form-group w50">
+                        <label id="type">IBGE:</label>
+                        <input type="text" id="ibge" name="ibge" placeholder="..." readonly required />
+                    </div><!--form-group-->
+
+                    <div class="form-group w50">
+                        <label id="type">Número:</label>
+                        <input type="text" id="number" name="numero" placeholder="*Digite o número de sua Residência..." required maxlength="5" />
+                    </div><!--form-group-->
+
+                    <div class="form-group w50">
+                        <label id="type">Complemento:</label>
+                        <input type="text" id="complement" name="complemento" placeholder="*Digite um Complemento" required />
+                    </div><!--form-group-->
+
+                    <div class="form-group">
+                        <input type="submit" id="acao" name="acao" value="Enviar!" />
+                    </div><!--form-group-->
+                </form><!--form-->
+
+                <div class="clear"></div><!--clear-->
+            </div><!--container-->
+        </section><!--cadastro-->
+
+        <footer class="baixo">
+            <div class="container">
+                <div class="line"></div><!--line-->
+
+                <p>Todos os direitos reservados.</p>
+            </div><!--container-->
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.mask.js"></script>
+
+        <script>
+            $(function() {
+                $('#cpf').mask('000.000.000-00');
+                $('#cnpj').mask('000.000.000/0000-00');
+                $('#phone').mask('(00)0000-0000');
+                $('#celphone').mask('(00)00000-0000');
+                $('#cep').mask('00000-000');
+                $('#name').mask('A', {
+                    translation: {
+                        A: { pattern: /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ'\s]+$/g, recursive: true },
+                    },
+                });
+                $('#number').mask('N', {
+                    translation: {
+                        N: { pattern: /^[0-9]$/g, recursive: true },
+                    },
+                });
+
+                $('#cpf_cnpj').on('click', function() {
+                    if ($(this).val() == 'Pessoa Física') {
+                        $('#cpf').css('display', 'block');
+                        $('#cpf').attr('required', 'required');
+                        $('#cnpj').css('display', 'none');
+                        $('#cnpj').removeAttr('required');
+                        $('#type').text('CPF:');
+                    } else if ($(this).val() == 'Pessoa Jurídica') {
+                        $('#cpf').css('display', 'none');
+                        $('#cpf').removeAttr('required');
+                        $('#cnpj').css('display', 'block');
+                        $('#cnpj').attr('required', 'required');
+                        $('#type').text('CNPJ:');
+                    }
+                });
+
+                $('#cep').keyup(function() {
+                    if ($(this).val().length == 9) {
+                        var url = "https://viacep.com.br/ws/" + $(this).val() + "/json/";
+
+                        $.ajax({
+                            type: 'GET',                          
+                            url: url,                            
+                            dataType: "JSON",                                                         
+                            success: (resp) => {
+                            	console.log(resp);
+                            	if (resp['logradouro'] == '') {
+                            		$('#address').removeAttr('readonly');
+                            	} else {
+                            		$('#address').val(resp['logradouro']);
+                            		$('#address').attr('readonly', 'readonly');
+                            	}
+                            	
+                            	if (resp['bairro'] == '') {
+                            		$('#district').removeAttr('readonly');
+                            	} else {
+                            		$('#district').val(resp['bairro']);
+                            		$('#district').attr('readonly', 'readonly');
+                            	}
+
+                                $('#city').val(resp['localidade']);
+                                $('#ibge').val(resp['ibge']);
+                                $('#state').val(resp['uf']);
+                            },
+                            error: (resp) => {
+                                alert("CEP Não encontrado.");                     
+                            }                            
+                        });
+                    }
+                });
+            });
+        </script>
+		
+		<script src="js/scripts.js"></script>
+    </body>
+</html>
