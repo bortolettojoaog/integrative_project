@@ -35,7 +35,7 @@
 
 ### Prerequisites:
 
-You need to have the following tools installed on your machine: [Git](https://git-scm.com), [SpringBoot](https://spring.io/projects/spring-boot) and [Eclipse](https://www.eclipse.org/downloads/)
+You need to have the following tools installed on your machine: [Git](https://git-scm.com), [XAMPP](https://www.apachefriends.org/pt_br/index.html), [SpringBoot](https://spring.io/projects/spring-boot) and [Eclipse](https://www.eclipse.org/downloads/)
 
 <br/>
 
@@ -52,6 +52,10 @@ $ cd integrative_project
 $ <https://www.eclipse.org/downloads/>
 
 # Import the project into Eclipse using Maven
+
+# Open xampp server
+
+# Create a database with the name 'database'
 
 # Right click on the project and run using java application
 
@@ -76,6 +80,8 @@ The following tools were used in building the project:
 - [Java](https://www.java.com/)
 - [SpringBoot](https://spring.io/projects/spring-boot)
 - [Eclipse](https://www.eclipse.org/downloads/)
+- [SQL](https://pt.wikipedia.org/wiki/SQL)
+- [XAMPP](https://www.apachefriends.org/pt_br/index.html)
 
 <br/>
 
